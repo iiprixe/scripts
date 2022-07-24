@@ -1,0 +1,156 @@
+
+getgenv().supported = false
+getgenv().Game = false
+setclipboard('https://discord.gg/j8j6ych3QE')
+
+local Console =  loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/STX"))()
+local ConsoleLog = Console:Window({
+    Title = "[Stormzzys Scripts] Loader",
+    Position = UDim2.new(0.5, 0, 0.5, 0),
+    DragSpeed = 12
+})
+local Player = game.Players.LocalPlayer
+local Char = Player.Character
+local Humanoid = Char.Humanoid
+local WaitDelay = 0.5
+local StillWaiting = false
+ConsoleLog:Prompt({
+    Title = "Starting User Checker!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+
+ConsoleLog:Prompt({
+    Title = "Applie For User At https://discord.gg/j8j6ych3QE",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+
+ConsoleLog:Prompt({
+    Title = "Discord Invite Copied",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+
+wait(15)
+if game.Players.LocalPlayer.UserId == 1252725828 then
+getgenv().supported = true
+	ConsoleLog:Prompt({
+    Title = "User [Stormzzy] Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+	ConsoleLog:Prompt({
+    Title = "Checking Game!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(7)
+if game.PlaceId == 1828509885 then
+    getgenv().Game = true
+	ConsoleLog:Prompt({
+    Title = "Game [Egg Farm Tycoon] Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(7)
+game.CoreGui.STX_Console:remove()
+wait(1)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/iiprixe/456/main/e'))()
+end
+end
+
+if game.PlaceId == 8750997647 then
+    getgenv().Game = true
+	ConsoleLog:Prompt({
+    Title = "Game [Tapping Legends X] Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(7)
+game.CoreGui.STX_Console:remove()
+wait(1)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/iiprixe/67/main/hi'))()
+end
+
+
+
+
+
+
+
+wait(17)
+if supported == false then 
+ConsoleLog:Prompt({
+    Title = "User Not Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "fail"
+   })
+wait(5)
+game.CoreGui.STX_Console:remove()
+end
+
+if getgenv().Game == false then
+ConsoleLog:Prompt({
+    Title = "Game Not Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "fail"
+   })
+wait(5)
+game.CoreGui.STX_Console:remove()    
+end
+
