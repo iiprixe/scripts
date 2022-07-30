@@ -40,6 +40,7 @@ getgenv().supported = true
     },
     Type = "nofitication"
 })
+end
 if game.Players.LocalPlayer.UserId == 3426658733 then
 getgenv().supported = true
 	ConsoleLog:Prompt({
@@ -53,7 +54,7 @@ getgenv().supported = true
     },
     Type = "nofitication"
 })
-wait(4)
+end
 	ConsoleLog:Prompt({
     Title = "Checking Game!",
     TypesWeHave = {
@@ -84,8 +85,7 @@ game.CoreGui.STX_Console:remove()
 wait(1)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/iiprixe/456/main/e'))()
 end
-end
-wait(7)
+
 if game.PlaceId == 9810700576 then
     getgenv().Game = true
 	ConsoleLog:Prompt({
@@ -104,9 +104,25 @@ game.CoreGui.STX_Console:remove()
 wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iiprixe/kl/main/kl"))()
 end
+if game.PlaceId == 662417684 then
+    getgenv().Game = true
+	ConsoleLog:Prompt({
+    Title = "Game [LUCKY BLOCKS Battlegrounds] Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(7)
+game.CoreGui.STX_Console:remove()
+wait(1)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/iiprixe/1234/main/h'))()
 end
-
-wait(17)
+wait(20)
 if supported == false then 
 ConsoleLog:Prompt({
     Title = "User Not Supported!",
