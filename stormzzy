@@ -54,6 +54,19 @@ getgenv().supported = true
     },
     Type = "nofitication"
 })
+if game.Players.LocalPlayer.UserId == 1825135895 then
+getgenv().supported = true
+	ConsoleLog:Prompt({
+    Title = "User [S3SZE] Supported!",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
 end
 	ConsoleLog:Prompt({
     Title = "Checking Game!",
